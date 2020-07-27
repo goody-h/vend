@@ -27,8 +27,6 @@ class FlowController {
       this.title,
       this.isLogin = false,
       this.reverseAction});
-  bool isLast = true;
-  bool isFirst = false;
   final String action;
   final String title;
   int index = 0;
@@ -82,8 +80,6 @@ class _FlowPageState extends State<FlowPage> {
       flowController.setValue(value);
 
       if (hasvalue != flowController.hasValue) setState(() {});
-
-      print(value);
     });
   }
 
